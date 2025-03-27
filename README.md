@@ -1,18 +1,70 @@
-# demo_animation
+# Cat Animation with Interview Task
 
-A new Flutter project.
+A Flutter application showcasing an interactive cat animation with theme management and localization support. This project demonstrates clean architecture principles using BLoC pattern.
+
+## Features
+
+- 🐱 Custom animated cat with:
+  - Smooth tail wave animation
+  - Interactive ear movements
+  - Clean, modern design
+
+- 🎨 Theme Management:
+  - Light/Dark theme support
+  - Persistent theme preferences
+  - Smooth theme transitions
+
+- 🌍 Localization:
+  - English and Spanish support
+  - Easy to add more languages
+  - Persistent language preferences
+
+- 🏗 Clean Architecture:
+  - BLoC pattern implementation
+  - Separation of concerns
+  - Maintainable and scalable code
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK (latest version)
+- Dart SDK (latest version)
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository:
+```bash
+git clone https://github.com/AjayPendkar/cat_animation_with_interview_task.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# cat_animation_with_interview_task
-# cat_animation_with_interview_task
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+## Project Structure
+
+```
+lib/
+├── core/
+│   ├── theme/
+│   │   ├── app_theme.dart
+│   │   └── theme_bloc.dart
+│   └── localization/
+│       ├── app_localizations.dart
+│       └── localization_bloc.dart
+├── features/
+│   └── cat_animation/
+│       ├── presentation/
+│       │   ├── pages/
+│       │   └── widgets/
+│       ├── domain/
+│       └── data/
+└── main.dart
+```
+
